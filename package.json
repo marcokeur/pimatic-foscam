@@ -1,0 +1,89 @@
+{
+  "_args": [
+    [
+      "pimatic-foscam",
+      "/home/pi/pimatic-app"
+    ]
+  ],
+  "_from": "pimatic-foscam@latest",
+  "_id": "pimatic-foscam@0.8.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/pimatic-foscam",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "email": "marco@precision-it.nl",
+    "name": "marcokeur"
+  },
+  "_npmVersion": "2.12.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "pimatic-foscam",
+    "raw": "pimatic-foscam",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/pimatic-foscam/-/pimatic-foscam-0.8.3.tgz",
+  "_shasum": "420187946c7f16ebe1dca9039eb077fc9943f4d8",
+  "_shrinkwrap": null,
+  "_spec": "pimatic-foscam",
+  "_where": "/home/pi/pimatic-app",
+  "author": {
+    "email": "you@example.com",
+    "name": "Your Name",
+    "url": "http://your-website"
+  },
+  "bugs": {
+    "url": "https://github.com/marcokeur/pimatic-foscam/issues"
+  },
+  "configSchema": "foscam-config-schema.coffee",
+  "dependencies": {
+    "node-rtsp-stream": "*",
+    "xml2js": "*"
+  },
+  "description": "The plugin description",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "420187946c7f16ebe1dca9039eb077fc9943f4d8",
+    "tarball": "http://registry.npmjs.org/pimatic-foscam/-/pimatic-foscam-0.8.3.tgz"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  },
+  "files": [
+    "README.md",
+    "app/IpCamera-page.coffee",
+    "app/IpCamera-template.html",
+    "device-config-schema.coffee",
+    "foscam-config-schema.coffee",
+    "foscam.coffee"
+  ],
+  "gitHead": "7cc21803c679975a7cdae362a170335a0628d666",
+  "homepage": "http://your-plugin-website",
+  "main": "foscam",
+  "maintainers": [
+    {
+      "name": "marcokeur",
+      "email": "marco@precision-it.nl"
+    }
+  ],
+  "name": "pimatic-foscam",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "pimatic": "0.8.*"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marcokeur/pimatic-foscam.git"
+  },
+  "scripts": {},
+  "version": "0.8.3"
+}
