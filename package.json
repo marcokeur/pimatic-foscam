@@ -59,8 +59,8 @@
   },
   "files": [
     "README.md",
-    "app/IpCamera-page.coffee",
-    "app/IpCamera-template.html",
+    "app/ipcamera-page.coffee",
+    "app/ipcamera-template.html",
     "device-config-schema.coffee",
     "foscam-config-schema.coffee",
     "foscam.coffee"
