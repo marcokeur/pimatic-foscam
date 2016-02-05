@@ -157,7 +157,6 @@ module.exports = (env) ->
       filename = @getDateTime() + '_snapshot.jpg'
 
       req = request(@url).pipe(fs.createWriteStream(@getImgPath() + filename))
-      #req.on 'end', ->
       setTimeout =>
         fs.createReadStream(@getImgPath() + filename).pipe(fs.createWriteStream(@getImgPath() + 'last_snapshot.jpg'))
       , 500  
@@ -175,6 +174,10 @@ module.exports = (env) ->
         @getCGIResponse 'openInfraLed'
         @irEnabled = true
         env.logger.info('Infrared on')
+
+      setTimeout =>
+        @getCGIResponse 'setInfraLedConfig&mode=0'
+      , 60000
       return
 
     getUsername   : -> Promise.resolve(@username)
