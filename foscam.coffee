@@ -86,10 +86,11 @@ module.exports = (env) ->
       @getCGIResponse('getDevState', 
         (obj) -> 
           console.dir obj
-          if obj.infraLedState == '1'
-            @irEnabled = true
-          else
-            @irEnabled = false
+          if obj != null
+            if obj.infraLedState == '1'
+              @irEnabled = true
+            else
+              @irEnabled = false
         )
 
       stream = new Stream({
@@ -110,8 +111,12 @@ module.exports = (env) ->
           '&usr=' + @username + '&pwd=' + @password
       
       request cgiUrl, (err, res, body) ->
-        parseString body, (err, parsedObj) ->
-          cb? parsedObj.CGI_Result
+        console.log "err " + err
+        if err?.length
+          parseString body, (err, parsedObj) ->
+            cb? parsedObj.CGI_Result
+        else
+            cb? null
 
     getImgPath: ->
       imgPath = ""

@@ -1,21 +1,52 @@
 {
+  "name": "pimatic-foscam",
+  "description": "A plugin to display foscam HD cameras in the UI. Also provides an action to take snapshots.",
+  "author": "Marco Keur <marco@precision-it.nl> (http://precision-it.nl)",
+  "main": "foscam",
+  "files": [
+    "foscam.coffee",
+    "README.md",
+    "foscam-config-schema.coffee",
+    "device-config-schema.coffee",
+    "app/ipcamera-page.coffee",
+    "app/ipcamera-template.html",
+    "app/jsmpg.js"
+  ],
+  "version": "0.8.6",
+  "homepage": "http://precision-it.nl",
+  "repository": {
+    "type":"git",
+    "url": "git://github.com/marcokeur/pimatic-foscam.git"
+  },
+  "configSchema": "foscam-config-schema.coffee",
+  "dependencies": {
+    "xml2js": "*"
+  }
+}
+
+
+{
   "_args": [
     [
       "pimatic-foscam",
       "/home/pi/pimatic-app"
     ]
   ],
-  "_from": "pimatic-foscam@latest",
-  "_id": "pimatic-foscam@0.8.3",
+  "_from": "pimatic-foscam@",
+  "_id": "pimatic-foscam@0.8.6",
   "_inCache": true,
   "_installable": true,
   "_location": "/pimatic-foscam",
-  "_nodeVersion": "0.12.7",
+  "_nodeVersion": "0.10.24",
+  "_npmOperationalInternal": {
+    "host": "packages-5-east.internal.npmjs.com",
+    "tmp": "tmp/pimatic-foscam-0.8.6.tgz_1454680652064_0.0077676111832261086"
+  },
   "_npmUser": {
     "email": "marco@precision-it.nl",
     "name": "marcokeur"
   },
-  "_npmVersion": "2.12.1",
+  "_npmVersion": "3.5.3",
   "_phantomChildren": {},
   "_requested": {
     "name": "pimatic-foscam",
@@ -28,8 +59,8 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/pimatic-foscam/-/pimatic-foscam-0.8.3.tgz",
-  "_shasum": "420187946c7f16ebe1dca9039eb077fc9943f4d8",
+  "_resolved": "https://registry.npmjs.org/pimatic-foscam/-/pimatic-foscam-0.8.6.tgz",
+  "_shasum": "422d23cfbbefc5dc389f5a673b98070cccdcca8f",
   "_shrinkwrap": null,
   "_spec": "pimatic-foscam",
   "_where": "/home/pi/pimatic-app",
@@ -50,8 +81,8 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "420187946c7f16ebe1dca9039eb077fc9943f4d8",
-    "tarball": "http://registry.npmjs.org/pimatic-foscam/-/pimatic-foscam-0.8.3.tgz"
+    "shasum": "422d23cfbbefc5dc389f5a673b98070cccdcca8f",
+    "tarball": "http://registry.npmjs.org/pimatic-foscam/-/pimatic-foscam-0.8.6.tgz"
   },
   "engines": {
     "node": ">0.8.x",
@@ -85,5 +116,5 @@
     "url": "git://github.com/marcokeur/pimatic-foscam.git"
   },
   "scripts": {},
-  "version": "0.8.5"
+  "version": "0.8.6"
 }
