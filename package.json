@@ -1,6 +1,15 @@
 {
   "name": "pimatic-foscam",
+  "version": "0.8.6",
   "description": "A plugin to display foscam HD cameras in the UI. Also provides an action to take snapshots.",
+  "keywords": [
+    "pimatic",
+    "foscam",
+    "stream"
+  ],
+  "homepage": "http://github.com/marcokeur/pimatic-foscam",
+  "bugs": "http://github.com/marcokeur/pimatic-foscam/issues",
+  "license": "GPL-2.0",
   "author": "Marco Keur <marco@precision-it.nl> (http://precision-it.nl)",
   "main": "foscam",
   "files": [
@@ -12,8 +21,6 @@
     "app/ipcamera-template.html",
     "app/jsmpg.js"
   ],
-  "version": "0.8.6",
-  "homepage": "http://precision-it.nl",
   "repository": {
     "type":"git",
     "url": "git://github.com/marcokeur/pimatic-foscam.git"
@@ -21,100 +28,12 @@
   "configSchema": "foscam-config-schema.coffee",
   "dependencies": {
     "xml2js": "*"
-  }
-}
-
-
-{
-  "_args": [
-    [
-      "pimatic-foscam",
-      "/home/pi/pimatic-app"
-    ]
-  ],
-  "_from": "pimatic-foscam@",
-  "_id": "pimatic-foscam@0.8.6",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/pimatic-foscam",
-  "_nodeVersion": "0.10.24",
-  "_npmOperationalInternal": {
-    "host": "packages-5-east.internal.npmjs.com",
-    "tmp": "tmp/pimatic-foscam-0.8.6.tgz_1454680652064_0.0077676111832261086"
   },
-  "_npmUser": {
-    "email": "marco@precision-it.nl",
-    "name": "marcokeur"
-  },
-  "_npmVersion": "3.5.3",
-  "_phantomChildren": {},
-  "_requested": {
-    "name": "pimatic-foscam",
-    "raw": "pimatic-foscam",
-    "rawSpec": "",
-    "scope": null,
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "https://registry.npmjs.org/pimatic-foscam/-/pimatic-foscam-0.8.6.tgz",
-  "_shasum": "422d23cfbbefc5dc389f5a673b98070cccdcca8f",
-  "_shrinkwrap": null,
-  "_spec": "pimatic-foscam",
-  "_where": "/home/pi/pimatic-app",
-  "author": {
-    "email": "you@example.com",
-    "name": "Your Name",
-    "url": "http://your-website"
-  },
-  "bugs": {
-    "url": "https://github.com/marcokeur/pimatic-foscam/issues"
-  },
-  "configSchema": "foscam-config-schema.coffee",
-  "dependencies": {
-    "node-rtsp-stream": "*",
-    "xml2js": "*"
-  },
-  "description": "The plugin description",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "422d23cfbbefc5dc389f5a673b98070cccdcca8f",
-    "tarball": "http://registry.npmjs.org/pimatic-foscam/-/pimatic-foscam-0.8.6.tgz"
+  "peerDependencies": {
+    "pimatic": "0.8.*"
   },
   "engines": {
     "node": ">0.8.x",
     "npm": ">1.1.x"
-  },
-  "files": [
-    "README.md",
-    "app/ipcamera-page.coffee",
-    "app/ipcamera-template.html",
-    "device-config-schema.coffee",
-    "foscam-config-schema.coffee",
-    "foscam.coffee"
-  ],
-  "gitHead": "7cc21803c679975a7cdae362a170335a0628d666",
-  "homepage": "http://your-plugin-website",
-  "main": "foscam",
-  "maintainers": [
-    {
-      "name": "marcokeur",
-      "email": "marco@precision-it.nl"
-    }
-  ],
-  "name": "pimatic-foscam",
-  "optionalDependencies": {},
-  "peerDependencies": {
-    "pimatic": "0.8.*"
-  },
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/marcokeur/pimatic-foscam.git"
-  },
-  "scripts": {},
-  "version": "0.8.6"
+  }
 }
