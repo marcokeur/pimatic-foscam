@@ -3,20 +3,13 @@ $(document).on("templateinit", (event) ->
         constructor: (templData, @device) ->
           @socket = io.connect("#{document.location.host}/")
 
-          #setTimeout ->
-          #  client = new WebSocket( 'ws://178.84.2.152:9500/' );
-          #  canvas = document.getElementById('videoCanvas');
-          #  player = new jsmpeg(client, {canvas:canvas});
-
-
           super(templData, @device)
 
         afterRender: (elements) ->
           super(elements)
-          client = new WebSocket( 'ws://178.84.2.152:9500/' );
+          client = new WebSocket( 'ws://' + "#{document.location.hostname}" + ':9500/' );
           canvas = document.getElementById('videoCanvas');
           player = new jsmpeg(client, {canvas:canvas});
-
 
         onSaveSnapshotPress: ->
           console.log('snapshot')
