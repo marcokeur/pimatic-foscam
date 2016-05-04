@@ -83,11 +83,10 @@ module.exports = (env) ->
       @rtspUrl = 'rtsp://' + @username + ':' + @password + '@' + 
             @cameraIp + '/videoSub'
 
-      @createImgDirectory
+      @createImgDirectory()
 
       @getCGIResponse('getDevState', 
         (obj) -> 
-          console.dir obj
           if obj != null
             if obj.infraLedState == '1'
               @irEnabled = true
@@ -113,7 +112,6 @@ module.exports = (env) ->
           '&usr=' + @username + '&pwd=' + @password
       
       request cgiUrl, (err, res, body) ->
-        console.log "err " + err
         if err?.length
           parseString body, (err, parsedObj) ->
             cb? parsedObj.CGI_Result
@@ -134,7 +132,7 @@ module.exports = (env) ->
       fs.exists(@imgPath,(exists)=>
         if !exists 
           fs.mkdir(@imgPath,(stat)=>
-            @plugin.info "Create directory for the first time"
+            console.log("Create directory " + @imgPath)
           )
       )
 
@@ -173,6 +171,8 @@ module.exports = (env) ->
       return
 
     toggleInfrared: =>
+      @getCGIResponse 'setInfraLedConfig&mode=1'
+
       if @irEnabled
         @getCGIResponse 'closeInfraLed'
         @irEnabled = false
@@ -220,7 +220,6 @@ module.exports = (env) ->
         )
 
       if m.hadMatch()
-        console.log('MATCH!!!!')
         match = m.getFullMatch()
 
         return {
