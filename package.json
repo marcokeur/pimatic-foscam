@@ -1,6 +1,6 @@
 {
   "name": "pimatic-foscam",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "A plugin to display foscam HD cameras in the UI. Also provides an action to take snapshots.",
   "keywords": [
     "pimatic",
