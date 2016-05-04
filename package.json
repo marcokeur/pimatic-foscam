@@ -19,7 +19,9 @@
     "device-config-schema.coffee",
     "app/ipcamera-page.coffee",
     "app/ipcamera-template.html",
-    "app/jsmpg.js"
+    "app/jsmpg.js",
+    "lib/mpeg1muxer.js",
+    "lib/videoStream.js"
   ],
   "repository": {
     "type":"git",
