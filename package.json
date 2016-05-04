@@ -1,6 +1,6 @@
 {
   "name": "pimatic-foscam",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "description": "A plugin to display foscam HD cameras in the UI. Also provides an action to take snapshots.",
   "keywords": [
     "pimatic",
@@ -24,7 +24,7 @@
     "lib/videoStream.js"
   ],
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "git://github.com/marcokeur/pimatic-foscam.git"
   },
   "configSchema": "foscam-config-schema.coffee",
