@@ -4,7 +4,9 @@ module.exports = (env) ->
   request = env.require 'request'
   fs = env.require 'fs'
   path = env.require 'path'
-  Stream = env.require 'node-rtsp-stream'
+  #Stream = env.require 'node-rtsp-stream'
+  Stream = require(__dirname + '/lib/videoStream.js');
+
   {parseString} = env.require 'xml2js'
   M = env.matcher
   _ = env.require('lodash')
